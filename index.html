@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Heliotrope Architects</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/lt7.css" /><![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+	
+	<!-- include Cycle plugin -->
+	<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+	
+	<!--  initialize the slideshow when the DOM is ready -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$('#content').show();
+	
+	    $('.slideshow-container').cycle({
+			fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			speed: 1000,
+	 	    timeout: 4000, 
+	 	    random: 1
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<!-- wrapper start -->
+	<div id="wrapper">
+		<div id="container">
+			<!-- header start -->
+			<div id="header">
+				<!-- logo -->
+				<h1 class="logo"><a href="index.html">HELIOTROPE</a></h1>
+				<!-- navigation -->
+				<ul class="nav">
+					<li><a class="nav-work" href="work.html" onFocus="if(this.blur)this.blur()">WORK</a></li>
+					<li><a class="nav-office" href="office.html" onFocus="if(this.blur)this.blur()">OFFICE</a></li>
+					<li><a class="nav-blog" href="http://heliotropearchitects.tumblr.com" onFocus="if(this.blur)this.blur()">BLOG</a></li>
+				</ul>
+			</div>
+			<!-- header end || content start -->
+			<div id="content" style="display:none">
+				<div class="slideshow-container">
+					<a href="evo.html"><img src="images/home/evo.jpg" alt="evo" width="860" height="510" /></a>
+					<a href="fremontcollective.html"><img src="images/home/fremont_collective.jpg" alt="Fremont Collective" width="860" height="510" /></a>
+					<a href="grantcreek.html"><img src="images/home/grantcreek.jpg" alt="Grant Creek" width="860" height="510" /></a>
+					<a href="ibex.html"><img src="images/home/ibex.jpg" alt="Grant Creek" width="860" height="510" /></a>
+					<a href="joule.html"><img src="images/home/joule.jpg" alt="Lake Washington" width="860" height="510" /></a>
+					<a href="madisonpark.html"><img src="images/home/madison_park.jpg" alt="Magnolia" width="860" height="510" /></a>
+					<a href="northbeach.html"><img src="images/home/north_beach.jpg" alt="North Beach" width="860" height="510" /></a>
+					<a href="palmdesert.html"><img src="images/home/palm_dessert.jpg" alt="Palm Desert" width="860" height="510" /></a>
+					<a href="rosspark.html"><img src="images/home/ross_park.jpg" alt="Ross Park" width="860" height="510" /></a>
+					<a href="whalewins.html"><img src="images/home/whale.jpg" alt="Spring Hill" width="860" height="510" /></a>
+					<a href="suncrest.html"><img src="images/home/suncrest.jpg" alt="Suncrest" width="860" height="510" /></a>
+					<a href="bunnylane.html"><img src="images/home/bunnylane.jpg" alt="Bunny Lane" width="860" height="510" /></a>
+				</div>
+			</div>
+			
+			
+			<!-- content end -->
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<!-- wrapper end || footer start -->
+	<div id="footer">
+		<span class="contact"><a href="office.html">Contact Information</a></span>
+		Heliotrope Architects &copy; 2012. All rights reserved. Site by <a href="http://www.workofwaves.com" target="_blank">waves</a>
+	</div>
+	<!-- footer end -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12741368-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

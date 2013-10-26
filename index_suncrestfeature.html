@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Heliotrope Architects</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/lt7.css" /><![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+	
+	<!-- include Cycle plugin -->
+	<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+	
+	<!--  initialize the slideshow when the DOM is ready -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$('#content').show();
+	
+	    $('.slideshow-container').cycle({
+			fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			speed: 1000,
+	 	    timeout: 4000, 
+	 	    random: 1
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<!-- wrapper start -->
+	<div id="wrapper">
+		<div id="container">
+			<!-- header start -->
+			<div id="header">
+				<!-- logo -->
+				<h1 class="logo"><a href="index.html">HELIOTROPE</a></h1>
+				<!-- navigation -->
+				<ul class="nav">
+					<li><a class="nav-work" href="work.html" onFocus="if(this.blur)this.blur()">WORK</a></li>
+					<li><a class="nav-office" href="office.html" onFocus="if(this.blur)this.blur()">OFFICE</a></li>
+					<li><a class="nav-blog" href="http://heliotropearchitects.tumblr.com" onFocus="if(this.blur)this.blur()">BLOG</a></li>
+				</ul>
+			</div>
+			<!-- header end || content start -->
+			<div id="content" style="display:none">
+				<div class="slideshow-hold">
+					<a href="suncrest.html"><img src="images/home/Suncrest.jpg" width="860" height="510" /></a>
+				</div>
+			</div>
+			
+			
+			<!-- content end -->
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<!-- wrapper end || footer start -->
+	<div id="footer">
+		<span class="contact"><a href="office.html">Contact Information</a></span>
+		Heliotrope Architects &copy; 2010. All rights reserved. Site by <a href="http://www.workofwaves.com" target="_blank">waves</a>
+	</div>
+	<!-- footer end -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12741368-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

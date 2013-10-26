@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Heliotrope Architects</title>
+	<link rel="stylesheet" type="text/css" href="http://www.heliotropearchitects.com/css/all.css" />
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="http://www.heliotropearchitects.com/css/lt7.css" /><![endif]-->
+	
+	<style type="text/css">
+	
+		ol.posts {padding: 0px; margin: 0px; list-style-type: none;}
+		ol.posts li {margin-bottom: 20px;}
+		
+		#postmeta {margin-bottom: 40px;}
+		
+		.col1 {width: 500px;float: left;}
+		.col2 { margin-right: 0px; margin-left: 40px; margin-bottom: 0px; margin-top: 0px; width: 320px; float: left;}
+		
+		h1, h2, h3 { font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; text-transform:capitalize; font-weight: 300; }
+		
+		h1.title a, h1.title a:visited {color: #000;}
+		
+		h2 { font-size: 20px; }
+				
+		h1 {font-size: 40px; margin: 0px; }
+	
+		body { color: #333333; }
+	
+		p { color: #333333; font-size: 14px; line-height: 1.5em; }
+		
+		#ruler { width: 860px; height: 3px; background-color: black; margin: 40px 0 40px 0; clear: both; }
+		
+		#header {
+			margin-bottom: 40px;
+		}
+		
+		ul.tags {margin-top:5px; padding: 0;}
+		
+		ul.tags li {margin: 0 5px 0 0; padding: 0; float: left;}
+		hr { margin-bottom: 70px; border-left-style: none; border-bottom-style: solid; border-right-style: none; border-top-style: none; border-right-width: 0px; border-left-width: 0px; border-top-width: 0px; border-color: #d5d5d5; border-bottom-width: 1px; color: #eeeeee; }
+		
+		ul.links li {margin: 0 0 5px; 0; padding: 0;}
+		
+}
+	
+	</style>
+	
+</head>
+<body>
+	<!-- wrapper start -->
+	<div id="wrapper">
+		<div id="container">
+			<!-- header start -->
+			<div id="header">
+				<!-- logo -->
+				<h1 class="logo"><a href="http://www.heliotropearchitects.com/">HELIOTROPE</a></h1>
+				<!-- navigation -->
+				<ul class="nav">
+					<li><a class="nav-work" href="http://www.heliotropearchitects.com/work.html" onFocus="if(this.blur)this.blur()">WORK</a></li>
+					<li><a class="nav-office" href="http://www.heliotropearchitects.com/office.html" onFocus="if(this.blur)this.blur()">OFFICE</a></li>
+					<li class="active"><a class="nav-blog" href="http://heliotropearchitects.tumblr.com" onFocus="if(this.blur)this.blur()">BLOG</a></li>
+				</ul>
+			</div>
+			
+			
+			
+			
+			<!-- header end || content start -->
+			
+			
+			
+			<div id="content">
+				
+					<ul id="pages" class="navigation">
+						{block:HasPages}
+							{block:Pages}
+							<li><a href="{URL}">{Label}</a></li>
+							{/block:Pages}
+						{/block:HasPages}
+							
+
+           
+						{block:SubmissionsEnabled}
+						<li><a href="/submit">{SubmitLabel}</a></li>
+						{/block:SubmissionsEnabled}
+					</ul>
+<!--					
+					<div class="about">
+						<p>{Description}</p>
+					</div>
+//-->									
+				<div class="main">
+					
+					<div class="col1">
+
+						{block:SearchPage}
+							{block:NoSearchResults}
+								<h3 class="result_title">{lang:No search results for SearchQuery 2}.</h3>
+							{/block:NoSearchResults}
+							
+							{block:SearchResults}
+								<h3 class="result_title">{lang:SearchResultCount results for SearchQuery 2}:</h3>
+							{/block:SearchResults}
+						{/block:SearchPage}
+					
+						<ol class="posts">
+							{block:Posts}
+						
+							<li>
+							
+								{block:Regular}
+									<div class="post_content">
+										{block:Title}<h1 class="title"><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+										<p style="regular_post_body">{Body}</p>							
+									</div>
+								{/block:Regular}
+								
+								{block:Photo}
+									<div class="post_content">
+										<span class="photo">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" title="{PhotoAlt}">{LinkCloseTag}</span>
+										<p>{Caption}</p>
+									</div>
+								{/block:Photo}
+		
+								
+								{block:Quote}
+									<div class="post_content">
+										<p><span class="blockquote {Length}">{Quote}</span></p>
+										{block:Source}<p>&mdash;&nbsp;{Source}</p>{/block:Source}
+									</div>
+								{/block:Quote}
+								
+								{block:Video}
+									<div class="post_content">
+										{Video-500}
+										<p>{Caption}</p>
+									</div>
+								{/block:Video}
+								
+								{block:Audio}
+									<div class="post_content">
+										{AudioPlayerGrey}
+										<p>{Caption}</p>
+									</div>
+								{/block:Audio}
+								
+								{block:Link}
+									<div class="post_content">
+										<h2><a href="{URL}" {Target}>{Name}</a>&nbsp;&rarr;</h2>
+										{block:Description}<p>{Description}</p>{/block:Description}
+									</div>
+								{/block:Link}
+								
+								{block:Conversation}
+									<div class="post_content">
+										{block:Title}<h2>{Title}</h2>{/block:Title}
+										<p>
+											{block:Lines}
+											{block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br />
+											{/block:Lines}
+										</p>
+									</div>
+								{/block:Conversation}
+							
+							</li>
+							
+							<div id="postmeta">
+								{block:Date}
+									<a href="{Permalink}"><span class="date">{Month} {DayOfMonth}, {Year}</span></a>
+								{/block:Date}
+								
+								{block:NoteCount}
+									<p><a href="{Permalink}">{NoteCountWithLabel}</a></p>
+								{/block:NoteCount}
+								
+								{block:IfDisqusShortname}
+									<p><a href="{Permalink}#disqus_thread">Comments</a></p>
+								{/block:IfDisqusShortname}
+								
+								{block:SearchPage}
+									<p><a href="{Permalink}">{NoteCountWithLabel}</a></p>
+								{/block:SearchPage}
+								
+								{block:RebloggedFrom}
+									<p>{lang:Reblogged from} <br /><a href="{ReblogParentURL}">{ReblogRootName}</a></p>
+								{/block:RebloggedFrom}
+								
+								{block:HasTags}
+									<ul class="tags">
+										{block:Tags}
+										<li>
+											<a href="{TagURL}">{Tag}</a>
+										</li>
+										{/block:Tags}
+									</ul>
+								{/block:HasTags}
+							
+							</div>
+							
+							<hr />
+							
+							{/block:Posts}
+							
+						</ol>
+
+						{block:Pagination}
+							<div class="pagination">
+								{block:PreviousPage}
+									<a class="prev" rel="prev" href="{PreviousPage}">&larr; {lang:Previous Page}</a>
+								{/block:PreviousPage}
+								{block:NextPage}
+									<a class="next" rel="next" href="{NextPage}">{lang:Next Page} &rarr;</a>
+								{/block:NextPage}
+							</div>
+						{/block:Pagination}
+						
+						
+						{block:PermalinkPage}
+						
+							{block:PostNotes}
+								<div class="post">
+									<h3>{lang:Notes}</h3>
+									<p>{PostNotes}</p>
+								</div>
+							{/block:PostNotes}
+							
+							{block:IfDisqusShortname}
+								<div id="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+									<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+								</div>
+							{/block:IfDisqusShortname}
+	
+						{/block:PermalinkPage}
+					
+					</div>
+					
+
+				
+					<div class="col2">
+						<ul class="links">
+							<li><a href="/ask">Ask us a question</a></li>
+							<li><a href="https://www.facebook.com/pages/Heliotrope-Architects-PLLC/45543573679" target="_blank">Facebook</a></li>
+							<li><a href="/archive">Archive</a></li>
+						</ul>
+						
+						
+					</div>				
+				
+				</div>
+
+			</div>
+			
+			
+			<!-- content end -->
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<!-- wrapper end || footer start -->
+	<div id="footer">
+		<span class="contact"><a href="office.html">Contact Information</a></span>
+		Heliotrope Architects &copy; 2012. All rights reserved. Site by <a href="http://www.workofwaves.com" target="_blank">waves</a>
+	</div>
+	<!-- footer end -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12741368-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

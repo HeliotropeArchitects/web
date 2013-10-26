@@ -1,0 +1,8 @@
+.text-north-beach {
+	background:url(images/transparent.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text-north-beach.png', sizingMethod='crop');
+}
+.previews ul li a .workthumbnail .frame .note {
+	background:url(images/transparent.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-hover-preview.png', sizingMethod='scale');
+}
